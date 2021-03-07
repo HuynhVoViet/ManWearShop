@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+#navRight {
+    float: right;
+}
+ul{
+    background-color: #246C64;
+    overflow: hidden;
+    padding: 0px 32px 0px 40px;
+    height: 66px;
+    width: 100%;
+    min-width: 320px;
+    overflow: hidden;
+}
+li {
+    text-decoration-style: none;
+    display: inline-block;
+    padding: 0px 4px 0px 0px;
+    line-height: 60px;
+    color: #fff;
+}
+
+li a{
+    text-decoration-line: none;
+    color:#00C6B1;
+    padding: 0px;
+    cursor: pointer;
+    padding: 0px 15px 0px 0px;
+}
+
+.logo {
+    display: block;
+    color: #00C6B1;
+    font-size: 24px;
+    font-family: Roboto,sans-serif;
+    white-space: nowrap;
+    padding: 0px ;
+    cursor: pointer;
+    padding: 0px 15px 0px 0px;
+}
+
+fa-icon {
+    color: #fff;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 0px 15px 0px 0px;
+}
+
+input{
+    text-decoration-line: none;
+    border-style: none;
+    background-color:#246C64;
+    outline: 0px;
+    color: #fff;
+    padding: 0px 15px 0px 0px;
+}
+
+img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    
+}
+
+.badge {
+    position: absolute;
+    top: -17px;
+    right: -28px;
+    color:red;
+    font-size: 15px;
+}
