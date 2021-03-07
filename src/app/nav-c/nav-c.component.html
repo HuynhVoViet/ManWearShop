@@ -4,8 +4,18 @@
         <li><fa-icon [icon]="faBars"></fa-icon></li>
         <li><fa-icon [icon]="faSearch"></fa-icon></li>
         <li><input type="text" placeholder="Search for..."></li>
-        <li id="navRight"><img src="./assets/img/img_avatar.png"></li>
-        <li id="navRight"><fa-icon [icon]="faEnvelope"></fa-icon></li>
+        <li id="navRight" >
+            <button (click)="onButtonClick()"><img src="./assets/img/img_avatar.png"></button>
+            <div [class.dropdownContent]="dropdownContent">
+                <a href="#"><fa-icon [icon]="faUser" style="color: #1E2625;"></fa-icon>Profile</a>
+                <a href="#"><fa-icon [icon]="faCog" style="color: #1E2625;"></fa-icon>Settings</a>
+                <a href="#"><fa-icon [icon]="faPowerOff" style="color: #1E2625;"></fa-icon>Sign out</a>
+            </div>
+        </li>
+        <li id="navRight">
+            <fa-icon [icon]="faEnvelope"></fa-icon>
+            <span class="badge">5</span>
+        </li>
         <li id="navRight">
             <fa-icon [icon]="faBell"></fa-icon>
             <span class="badge">5</span>
