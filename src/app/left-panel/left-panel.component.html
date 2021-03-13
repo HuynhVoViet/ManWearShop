@@ -1,0 +1,168 @@
+<div class="SidebarComponent">
+    <ul >
+        <li>
+            <a>
+            <fa-icon [icon]="faHome"></fa-icon>
+            <span>Dashboard</span> 
+            </a>
+        </li>
+        <li>
+            <div (click)="onListClick()" >
+                <a href="#">
+                    <fa-icon [icon]="faCog"></fa-icon>
+                    <span>Components</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpComponent]="dropdownUpComponent"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownComponent]="dropdownDownComponent"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpComponent]="dropdownUpComponent">
+                <ul >
+                    <li><a>Mail</a></li>
+                    <li><a>Timeline</a></li>
+                    <li><a>TreeView</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick1()">
+                <a href="#">
+                    <fa-icon [icon]="faChartBar"></fa-icon>
+                    <span>Charts</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpChart]="dropdownUpChart"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownChart]="dropdownDownChart"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpChart]="dropdownUpChart">
+                <ul>
+                    <li><a>amCharts</a></li>
+                    <li><a>Chartist</a></li>
+                    <li><a>Chart.js</a></li>
+                    <li><a>Morris</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick2()">
+                <a>
+                    <fa-icon [icon]="faTv"></fa-icon>
+                    <span>UI Features</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpUI]="dropdownUpUI"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownUI]="dropdownDownUI"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpUI]="dropdownUpUI">
+                <ul>
+                    <li><a>Typography</a></li>
+                    <li><a>Buttons</a></li>
+                    <li><a>Icons</a></li>
+                    <li><a>Modals</a></li>
+                    <li><a>Grid</a></li>
+                    <li><a>Alerts</a></li>
+                    <li><a>Progress Bars</a></li>
+                    <li><a>Notifications</a></li>
+                    <li><a>Tabs & Accordions</a></li>
+                    <li><a>Sliders</a></li>
+                    <li><a>Panels</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick3()">
+                <a>
+                    <fa-icon [icon]="faEdit"></fa-icon>
+                    <span>Form Elements</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpForm]="dropdownUpForm"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownForm]="dropdownDownForm"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpForm]="dropdownUpForm">
+                <ul>
+                    <li><a>Form Inputs</a></li>
+                    <li><a>Form Layouts</a></li>
+                    <li><a>Form Wizard</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick4()">
+                <a>
+                    <fa-icon [icon]="faTable"></fa-icon>
+                    <span>Tables</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpTable]="dropdownUpTable"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownTable]="dropdownDownTable"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpTable]="dropdownUpTable">
+                <ul>
+                    <li><a>Basic Tables</a></li>
+                    <li><a>Smart Tables</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick5()">
+                <a>
+                    <fa-icon [icon]="faMapMarked" ></fa-icon>
+                    <span>Maps</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpMap]="dropdownUpMap"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownMap]="dropdownDownMap"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpMap]="dropdownUpMap">
+                <ul>
+                    <li><a>Google Maps</a></li>
+                    <li><a>Leaflet Maps</a></li>
+                    <li><a>Buddle Maps</a></li>
+                    <li><a>Line Maps</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick6()">
+                <a>
+                    <fa-icon [icon]="faFile"></fa-icon>
+                    <span>Pages</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpPage]="dropdownUpPage"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownPage]="dropdownDownPage"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpPage]="dropdownUpPage">
+                <ul>
+                    <li><a>Sign In</a></li>
+                    <li><a>Sign Up</a></li>
+                    <li><a>User Profile</a></li>
+                    <li><a>404 Page</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div (click)="onListClick7()">
+                <a>
+                    <fa-icon [icon]="faEllipsisH"></fa-icon>
+                    <span>Menu Level 1</span>
+                    <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpMenu]="dropdownUpMenu"></fa-icon>
+                    <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownMenu]="dropdownDownMenu"></fa-icon>
+                </a>
+            </div>
+            <div [class.dropdownUpMenu]="dropdownUpMenu">
+                <ul>
+                    <li><a>Menu Level 1.1</a></li>
+                    <li>
+                        <div (click)="onListClick8()">
+                            <a>
+                                <span>Menu Level 1.2</span>
+                                <fa-icon [icon]="faChevronUp" id="navRight" [class.dropdownUpMenu1]="dropdownUpMenu1"></fa-icon>
+                                <fa-icon [icon]="faChevronDown" id="navRight" [class.dropdownDownMenu1]="dropdownDownMenu1"></fa-icon>
+                            </a>
+                        </div>
+                        <div [class.dropdownUpMenu1]="dropdownUpMenu1">
+                            <ul>
+                                <li><a>Menu Level 1.2.1</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

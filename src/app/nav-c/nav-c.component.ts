@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faSearch, faBell, faEnvelope, faUser, faCog, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faBell, faEnvelope, faUser, faCog, faPowerOff} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-nav-c',
   templateUrl: './nav-c.component.html',
@@ -13,11 +13,16 @@ export class NavCComponent implements OnInit {
   faUser = faUser;
   faCog = faCog;
   faPowerOff = faPowerOff;
-  dropdownContent = true;
 
-  onButtonClick(){
-    this.dropdownContent = !this.dropdownContent;
+  dropdownUp = false;
+  dropdownDown = true;
+
+  onImgClick(){
+    this.dropdownUp = !this.dropdownUp;
+    this.dropdownDown = !this.dropdownDown;
   }
+
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,9 +1,12 @@
-*{
-    box-sizing: border-box;
-}
+
 #navRight {
     float: right;
 }
+
+.navComponent{
+    text-decoration: none;
+}
+
 ul{
     background-color: #246C64;
     overflow: hidden;
@@ -11,7 +14,6 @@ ul{
     height: 66px;
     width: 100%;
     min-width: 320px;
-    overflow: hidden;
 }
 li {
     text-decoration-style: none;
@@ -21,7 +23,7 @@ li {
     color: #fff;
 }
 
-li a{
+a{
     text-decoration-line: none;
     color:#00C6B1;
     padding: 0px;
@@ -33,9 +35,7 @@ li a{
     display: block;
     color: #00C6B1;
     font-size: 24px;
-    font-family: Roboto,sans-serif;
     white-space: nowrap;
-    padding: 0px ;
     cursor: pointer;
     padding: 0px 15px 0px 0px;
 }
@@ -44,13 +44,10 @@ fa-icon {
     color: #fff;
     position: relative;
     cursor: pointer;
-    padding: 0px 15px 10px 0px;
-
+    padding: 0px 15px 10px 10px;
 }
 
 input{
-    text-decoration-line: none;
-    border-style: none;
     background-color:#246C64;
     outline: 0px;
     color: #fff;
@@ -63,6 +60,10 @@ img {
     height: 45px;
     cursor: pointer;
     vertical-align: middle;
+    background-color: #246C64;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-style: none;
 }
 
 .badge{
@@ -74,7 +75,7 @@ img {
     padding: 0px 4px;
 }
 
-.dropdownContent {
+.dropdownUp {
     display: block;
     position: absolute;
     top: 85px;
@@ -86,7 +87,7 @@ img {
     border: 1px solid #f9f9f9;
 }
 
-.dropdownContent a{
+.dropdownUp a{
     display: block;
     line-height: 1.42857143;
     white-space: nowrap;
@@ -95,3 +96,15 @@ img {
     clear: both;
     background-color: #f9f9f9;
 }
+
+.dropdownDown{
+    display: none;
+}
+
+.colorHoverBars{
+    font-size: 23px;
+}
+.navComponent ul li fa-icon:hover.colorHoverBars {
+    color: darkgoldenrod;
+}
+

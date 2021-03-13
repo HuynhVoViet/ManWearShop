@@ -1,12 +1,12 @@
 <div class="navComponent">
     <ul>
         <li><span class="logo">BlurAdmin</span></li>
-        <li><fa-icon [icon]="faBars"></fa-icon></li>
+        <li><fa-icon [icon]="faBars" class="colorHoverBars"></fa-icon></li>
         <li><fa-icon [icon]="faSearch"></fa-icon></li>
         <li><input type="text" placeholder="Search for..."></li>
         <li id="navRight" >
-            <button (click)="onButtonClick()"><img src="./assets/img/img_avatar.png"></button>
-            <div [class.dropdownContent]="dropdownContent">
+            <img src="./assets/img/img_avatar.png" (click)="onImgClick()">
+            <div [class.dropdownUp]="dropdownUp" [class.dropdownDown]="dropdownDown">
                 <a href="#"><fa-icon [icon]="faUser" style="color: #1E2625;"></fa-icon>Profile</a>
                 <a href="#"><fa-icon [icon]="faCog" style="color: #1E2625;"></fa-icon>Settings</a>
                 <a href="#"><fa-icon [icon]="faPowerOff" style="color: #1E2625;"></fa-icon>Sign out</a>

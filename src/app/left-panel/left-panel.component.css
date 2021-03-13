@@ -1,0 +1,149 @@
+#navRight {
+    float: right;
+}
+
+.SidebarComponent{
+    cursor: pointer;
+    border-top-style: solid;
+    width: 180px;
+    border-top-color: #264441;
+    
+}
+
+ul{
+    display: block;
+    background-color: #246C64;
+    position: relative;
+    height: 600px;
+    overflow: auto;
+}
+
+ul li ul{
+    height: auto;
+    overflow: hidden;
+}
+
+li{
+    line-height: 35px;
+    display: block;
+    position: relative;
+    
+}
+
+ul li ul li {
+    border-right: none;
+}
+
+a{
+    color: #fff;
+    text-shadow: none;
+    font-size: 13px;
+    padding-left: 10px;
+    height: auto;
+    line-height: 29px;
+}
+
+fa-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #264441;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color:  #246C64;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0A9082;
+    height: 50%;
+}
+
+.dropdownUpComponent {
+    display: none;
+    
+}
+
+.dropdownDownComponent {
+    display: none;
+}
+
+.dropdownUpChart {
+    display: none;
+    
+}
+
+.dropdownDownChart {
+    display: none;
+}
+
+.dropdownUpUI {
+    display: none;
+    
+}
+
+.dropdownDownUI {
+    display: none;
+}
+
+.dropdownUpForm {
+    display: none;
+    
+}
+
+.dropdownDownForm {
+    display: none;
+}
+
+.dropdownUpTable {
+    display: none;
+    
+}
+
+.dropdownDownTable {
+    display: none;
+}
+
+.dropdownUpMap {
+    display: none;
+    
+}
+
+.dropdownDownMap {
+    display: none;
+}
+
+.dropdownUpPage {
+    display: none;
+    
+}
+
+.dropdownDownPage {
+    display: none;
+}
+
+.dropdownUpMenu {
+    display: none;
+    
+}
+
+.dropdownDownMenu {
+    display: none;
+}
+
+.dropdownUpMenu1 {
+    display: none;
+    
+}
+
+.dropdownDownMenu1 {
+    display: none;
+}
